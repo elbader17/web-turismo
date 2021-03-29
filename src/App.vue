@@ -37,10 +37,10 @@
       <div>
         <v-layout :wrap="true">
           <v-flex xs6> 
-            <Card/>
+            <Card titulo="funcion 1" precio="300"/>
           </v-flex>
           <v-flex xs6> 
-            <Card/>
+            <Card titulo="funcion 2" precio="210"/>
           </v-flex>
         </v-layout>
       </div>
