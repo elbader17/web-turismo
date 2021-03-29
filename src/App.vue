@@ -1,10 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
+    <v-app-bar app color="primary" dark>
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
@@ -38,19 +34,28 @@
     </v-app-bar>
 
     <v-main>
-      <HelloWorld/>
+      <div>
+        <v-layout :wrap="true">
+          <v-flex xs6> 
+            <Card/>
+          </v-flex>
+          <v-flex xs6> 
+            <Card/>
+          </v-flex>
+        </v-layout>
+      </div>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import Card from "./components/Card";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
-    HelloWorld,
+    Card,
   },
 
   data: () => ({
